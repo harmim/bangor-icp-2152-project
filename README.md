@@ -1,4 +1,4 @@
-# Module ICP-2152: Java Technologies - Project
+# ICP-2152: Java Technologies - Project
 ## Academi Gymraeg
 
 #### Authors:
