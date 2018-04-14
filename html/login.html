@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Login | Academi Gymraeg</title>
+
+	<meta name="description" content="The tool to help learners acquire knowledge of Welsh nouns.">
+	<meta name="author" content="DVT HDH">
+	<meta name="keywords" content="bangor, java, maven, servlet, mysql, group project">
+
+	<link rel="Shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="index.html">Home</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+				</ul>
+
+				<ul class="navbar-nav float-lg-right">
+					<li class="nav-item active">
+						<a class="nav-link" href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h4 class="mb-3">Login</h4>
+
+				<form class="needs-validation mb-3" method="post" action="login.html">
+					<div class="form-row">
+						<div class="col-md-6 form-group">
+							<label for="username">Username</label>
+							<input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+						</div>
+
+						<div class="col-md-6 form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+						</div>
+					</div>
+
+					<hr class="mb-4">
+
+					<button class="btn btn-primary btn-lg btn-block" type="submit" value="submit" name="submit">
+						Login
+					</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">
+				©2018 DVT HDH | Academi Gymraeg
+			</span>
+		</div>
+	</footer>
+
+	<script src="js/jquery.slim.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
