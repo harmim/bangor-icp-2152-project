@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Login | Academi Gymraeg</title>
+	<title>Academi Gymraeg</title>
 
 	<meta name="description" content="The tool to help learners acquire knowledge of Welsh nouns.">
 	<meta name="author" content="DVT HDH">
@@ -19,7 +19,7 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="index-student.html">Home</a>
+			<a class="navbar-brand" href="index-administrator.html">Home</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -27,11 +27,17 @@
 
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="users-list.html">Users</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="vocabulary-list-administrator.html">Vocabulary</a>
+					</li>
 				</ul>
 
 				<ul class="navbar-nav float-lg-right">
-					<li class="nav-item active">
-						<a class="nav-link" href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+					<li class="nav-item">
+						<a class="nav-link" href="">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -40,28 +46,11 @@
 
 	<main class="container">
 		<div class="row">
-			<div class="col-md-8">
-				<h4 class="mb-3">Login</h4>
-
-				<form class="needs-validation">
-					<div class="form-row">
-						<div class="col-md-6 form-group">
-							<label for="username">Username</label>
-							<input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
-						</div>
-
-						<div class="col-md-6 form-group">
-							<label for="password">Password</label>
-							<input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
-						</div>
-					</div>
-
-					<hr class="mb-4">
-
-					<button class="btn btn-primary btn-lg btn-block" type="submit" value="submit" name="submit">
-						Login
-					</button>
-				</form>
+			<div class="col-md-6">
+				<a href="users-list.html" class="btn btn-primary btn-lg btn-block" role="button">Users</a>
+			</div>
+			<div class="col-md-6">
+				<a href="vocabulary-list-administrator.html" class="btn btn-primary btn-lg btn-block" role="button">Vocabulary</a>
 			</div>
 		</div>
 	</main>
@@ -70,6 +59,9 @@
 		<div class="container">
 			<span class="text-muted">
 				©2018 DVT HDH | Academi Gymraeg
+			</span>
+			<span class="float-right text-muted">
+				Administrator: eeub8c
 			</span>
 		</div>
 	</footer>

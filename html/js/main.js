@@ -3,16 +3,16 @@
  */
 
 
-let dhMain;
-if (typeof dhMain === "undefined") {
-	dhMain = {};
+let dvtHdhMain;
+if (typeof dvtHdhMain === "undefined") {
+	dvtHdhMain = {};
 }
 
 
 /**
  * Form validation using jQuery validation plugin.
  */
-dhMain.formValidation = {
+dvtHdhMain.formValidation = {
 	/**
 	 * Default validation options.
 	 */
@@ -21,11 +21,24 @@ dhMain.formValidation = {
 		validClass: "valid-feedback",
 		errorElement: "div",
 		highlight: function (element) {
-			$(element).parent().addClass("was-validated");
+			for (let $parent = $(element).parent(); $parent.prop("nodeName") !== "form"; $parent = $parent.parent()) {
+				if ($parent.hasClass("form-group")) {
+					$parent.addClass("was-validated");
+					break;
+				}
+			}
 			$(element).addClass("invalid").removeClass("valid");
 		},
 		unhighlight: function (element) {
 			$(element).removeClass("invalid").addClass("valid");
+		},
+		errorPlacement: function (error, element) {
+			for (let $parent = $(element).parent(); $parent.prop("nodeName") !== "form"; $parent = $parent.parent()) {
+				if ($parent.hasClass("form-group")) {
+					$parent.append(error);
+					break;
+				}
+			}
 		}
 	},
 
@@ -49,8 +62,26 @@ dhMain.formValidation = {
 
 
 /**
+ * DataTables initialization.
+ */
+dvtHdhMain.dataTables = {
+	/**
+	 * Initialization.
+	 */
+	init: function () {
+		if (typeof $().DataTable === "function") {
+			$(".data-table").DataTable({
+				"pageLength": 25
+			});
+		}
+	}
+};
+
+
+/**
  * Executes when the DOM is fully loaded.
  */
 $(function () {
-	dhMain.formValidation.init();
+	dvtHdhMain.formValidation.init();
+	dvtHdhMain.dataTables.init();
 });

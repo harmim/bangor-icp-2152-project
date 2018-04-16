@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Test | Academi Gymraeg</title>
+
+	<meta name="description" content="The tool to help learners acquire knowledge of Welsh nouns.">
+	<meta name="author" content="DVT HDH">
+	<meta name="keywords" content="bangor, java, maven, servlet, mysql, group project">
+
+	<link rel="Shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="index-student.html">Home</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="test.html">Take test</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="grade-history-student.html">Grade history</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav float-lg-right">
+					<li class="nav-item">
+						<a class="nav-link" href="">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h4 class="mb-3">Test</h4>
+
+				<form class="needs-validation">
+					<div class="form-group">
+						<p>
+							<strong>1.</strong> What is the gender of the Welsh noun <strong>tatws</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q1GenderMasculine" name="q1Gender" class="custom-control-input" required>
+							<label for="q1GenderMasculine" class="custom-control-label">masculine</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q1GenderFeminine" name="q1Gender" class="custom-control-input" required>
+							<label for="q1GenderFeminine" class="custom-control-label">feminine</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>2.</strong> What is the meaning of the Welsh noun <strong>tatws</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q2Meaning1" name="q2Meaning" class="custom-control-input" required>
+							<label for="q2Meaning1" class="custom-control-label">potatoes</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q2Meaning2" name="q2Meaning" class="custom-control-input" required>
+							<label for="q2Meaning2" class="custom-control-label">family</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q2Meaning3" name="q2Meaning" class="custom-control-input" required>
+							<label for="q2Meaning3" class="custom-control-label">lettuce</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q2Meaning4" name="q2Meaning" class="custom-control-input" required>
+							<label for="q2Meaning4" class="custom-control-label">tomato</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>3.</strong> What is the Welsh noun for the English word for <strong>potato</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q3English1" name="q3English" class="custom-control-input" required>
+							<label for="q3English1" class="custom-control-label">du</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q3English2" name="q3English" class="custom-control-input" required>
+							<label for="q3English2" class="custom-control-label">tatws</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q3English3" name="q3English" class="custom-control-input" required>
+							<label for="q3English3" class="custom-control-label">trwchus</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q3English4" name="q3English" class="custom-control-input" required>
+							<label for="q3English4" class="custom-control-label">glân</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>4.</strong> What is the gender of the Welsh noun <strong>tatws</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q4GenderMasculine" name="q4Gender" class="custom-control-input" required>
+							<label for="q4GenderMasculine" class="custom-control-label">masculine</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q4GenderFeminine" name="q4Gender" class="custom-control-input" required>
+							<label for="q4GenderFeminine" class="custom-control-label">feminine</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>5.</strong> What is the gender of the Welsh noun <strong>tatws</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q5GenderMasculine" name="q5Gender" class="custom-control-input" required>
+							<label for="q5GenderMasculine" class="custom-control-label">masculine</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q5GenderFeminine" name="q5Gender" class="custom-control-input" required>
+							<label for="q5GenderFeminine" class="custom-control-label">feminine</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>6.</strong> What is the gender of the Welsh noun <strong>tatws</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q6GenderMasculine" name="q6Gender" class="custom-control-input" required>
+							<label for="q6GenderMasculine" class="custom-control-label">masculine</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q6GenderFeminine" name="q6Gender" class="custom-control-input" required>
+							<label for="q6GenderFeminine" class="custom-control-label">feminine</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>7.</strong> What is the meaning of the Welsh noun <strong>tatws</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q7Meaning1" name="q7Meaning" class="custom-control-input" required>
+							<label for="q7Meaning1" class="custom-control-label">potatoes</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q7Meaning2" name="q7Meaning" class="custom-control-input" required>
+							<label for="q7Meaning2" class="custom-control-label">family</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q7Meaning3" name="q7Meaning" class="custom-control-input" required>
+							<label for="q7Meaning3" class="custom-control-label">lettuce</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q7Meaning4" name="q7Meaning" class="custom-control-input" required>
+							<label for="q7Meaning4" class="custom-control-label">tomato</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>8.</strong> What is the meaning of the Welsh noun <strong>tatws</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q8Meaning1" name="q8Meaning" class="custom-control-input" required>
+							<label for="q8Meaning1" class="custom-control-label">potatoes</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q8Meaning2" name="q8Meaning" class="custom-control-input" required>
+							<label for="q8Meaning2" class="custom-control-label">family</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q8Meaning3" name="q8Meaning" class="custom-control-input" required>
+							<label for="q8Meaning3" class="custom-control-label">lettuce</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q8Meaning4" name="q8Meaning" class="custom-control-input" required>
+							<label for="q8Meaning4" class="custom-control-label">tomato</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>9.</strong> What is the meaning of the Welsh noun <strong>tatws</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q9Meaning1" name="q9Meaning" class="custom-control-input" required>
+							<label for="q9Meaning1" class="custom-control-label">potatoes</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q9Meaning2" name="q9Meaning" class="custom-control-input" required>
+							<label for="q9Meaning2" class="custom-control-label">family</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q9Meaning3" name="q9Meaning" class="custom-control-input" required>
+							<label for="q9Meaning3" class="custom-control-label">lettuce</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q9Meaning4" name="q9Meaning" class="custom-control-input" required>
+							<label for="q9Meaning4" class="custom-control-label">tomato</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>
+							<strong>10.</strong> What is the Welsh noun for the English word for <strong>potato</strong>?
+						</p>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q10English1" name="q10English" class="custom-control-input" required>
+							<label for="q10English1" class="custom-control-label">du</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q10English2" name="q10English" class="custom-control-input" required>
+							<label for="q10English2" class="custom-control-label">tatws</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q10English3" name="q10English" class="custom-control-input" required>
+							<label for="q10English3" class="custom-control-label">trwchus</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="q10English4" name="q10English" class="custom-control-input" required>
+							<label for="q10English4" class="custom-control-label">glân</label>
+						</div>
+					</div>
+
+					<hr class="mb-4">
+
+					<button class="btn btn-primary btn-lg btn-block" type="submit" value="submit" name="submit">
+						Submit
+					</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">
+				©2018 DVT HDH | Academi Gymraeg
+			</span>
+			<span class="float-right text-muted">
+				Student: eeub8c
+			</span>
+		</div>
+	</footer>
+
+	<script src="js/jquery.slim.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
