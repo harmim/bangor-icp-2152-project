@@ -1,5 +1,7 @@
-.*
-!.gitignore
+# IntelliJ
+/.idea/*.local.*
+/.idea/workspace.xml
+/.idea/dictionaries/
 
 # Maven
 target/
