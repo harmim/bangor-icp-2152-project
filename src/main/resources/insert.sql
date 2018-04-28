@@ -1,0 +1,46 @@
+-- Author: DVT HDH
+
+SET NAMES utf8mb4;
+
+
+INSERT INTO `word` (`english`, `welsh`, `welsh_gender`)
+VALUES
+	('man', 'dyn', 'masculine'),
+	('man', 'dyn', 'masculine'),
+	('father', 'tad', 'masculine'),
+	('brother', 'brawd', 'masculine'),
+	('uncle', 'ewythr', 'masculine'),
+	('bull', 'tarw', 'masculine'),
+	('horse', 'ceffyl', 'masculine'),
+	('rooster', 'ceiliog', 'masculine'),
+	('ram', 'maharen', 'masculine'),
+	('dog', 'ci', 'masculine'),
+	('son', 'mab', 'masculine'),
+	('grandfather', 'tad-cu', 'masculine'),
+	('christmas', 'y nadolig', 'masculine'),
+	('easter', 'y pasg', 'masculine'),
+	('rain', 'glaw', 'masculine'),
+	('snow', 'eira', 'masculine'),
+	('fire', 'tan', 'masculine'),
+	('coffee', 'coffi', 'masculine'),
+	('beer', 'cwrw', 'masculine'),
+	('husband', 'gwr', 'masculine'),
+	('woman', 'dynes', 'feminine'),
+	('daughter', 'merch', 'feminine'),
+	('girl', 'merch', 'feminine'),
+	('mother', 'mam', 'feminine'),
+	('cow', 'buwch', 'feminine'),
+	('sister', 'buwch', 'feminine'),
+	('mare', 'caseg', 'feminine'),
+	('ewe', 'mamog', 'feminine'),
+	('hen', 'iar', 'feminine'),
+	('army', 'byddin', 'feminine'),
+	('wife', 'gwraig', 'feminine'),
+	('feminine teacher', 'athrawes', 'feminine'),
+	('easter', 'y pasg', 'feminine'),
+	('oak tree', 'derwen', 'feminine'),
+	('birch tree', 'bedwen', 'feminine'),
+	('snowden', 'yr wyddfa', 'feminine'),
+	('dress', 'ffrog', 'feminine'),
+	('glove', 'maneg', 'feminine'),
+	('nile river', 'nil', 'feminine');

@@ -1,0 +1,8 @@
+-- Author: DVT HDH
+
+SET NAMES utf8mb4;
+
+
+DROP TABLE IF EXISTS `test`;
+DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `word`;
