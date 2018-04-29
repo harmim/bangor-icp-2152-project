@@ -6,7 +6,6 @@ SET NAMES utf8mb4;
 INSERT INTO `word` (`english`, `welsh`, `welsh_gender`)
 VALUES
 	('man', 'dyn', 'masculine'),
-	('man', 'dyn', 'masculine'),
 	('father', 'tad', 'masculine'),
 	('brother', 'brawd', 'masculine'),
 	('uncle', 'ewythr', 'masculine'),
@@ -27,10 +26,10 @@ VALUES
 	('husband', 'gwr', 'masculine'),
 	('woman', 'dynes', 'feminine'),
 	('daughter', 'merch', 'feminine'),
-	('girl', 'merch', 'feminine'),
+	('girl', 'ferch', 'feminine'),
 	('mother', 'mam', 'feminine'),
 	('cow', 'buwch', 'feminine'),
-	('sister', 'buwch', 'feminine'),
+	('sister', 'chwaer', 'feminine'),
 	('mare', 'caseg', 'feminine'),
 	('ewe', 'mamog', 'feminine'),
 	('hen', 'iar', 'feminine'),
@@ -44,3 +43,10 @@ VALUES
 	('dress', 'ffrog', 'feminine'),
 	('glove', 'maneg', 'feminine'),
 	('nile river', 'nil', 'feminine');
+
+
+INSERT INTO `user` (`username`, `password`, `role`)
+VALUES
+	('administrator', '$2a$10$Or/.9dQ4PMurdxsrUVr2WOwSGAcYGxoiSFghsdIYCTBMblWZEQdja', 'administrator'),
+	('instructor', '$2a$10$J22XoJbIIUpe8CIOCNQKFelDqUEEkkZlDNek7PE7uc7nEFct1Tx1S', 'instructor'),
+	('student', '$2a$10$pbK5VwodsMd.E9XastH8fupiO4Zi63ehT.bHs1ik7NCZarDESmmxW', 'student');
