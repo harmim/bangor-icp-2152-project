@@ -21,10 +21,11 @@ CREATE TABLE `word` (
 
 CREATE TABLE `user` (
 	`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-	`user_name` VARCHAR(60) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+	`username` VARCHAR(60) COLLATE utf8mb4_unicode_520_ci NOT NULL,
 	`password` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
 	`role` ENUM('student','instructor','administrator') COLLATE utf8mb4_unicode_520_ci NOT NULL,
-	PRIMARY KEY (`id`)
+	PRIMARY KEY (`id`),
+	UNIQUE KEY `username` (`username`)
 )
 	ENGINE = InnoDB
 	DEFAULT CHARSET = utf8mb4
@@ -34,10 +35,11 @@ CREATE TABLE `user` (
 CREATE TABLE `test` (
 	`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	`user_id` INT UNSIGNED NOT NULL,
-	`mark` INT UNSIGNED NOT NULL,
+	`mark` NUMERIC(3, 2) NOT NULL,
 	`test_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`),
 	KEY `user_id` (`user_id`),
+	UNIQUE KEY `user_id_test_date` (`user_id`, `test_date`),
 	CONSTRAINT `test_fk_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE

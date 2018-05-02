@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.icp2152.dvthdh</groupId>
@@ -44,6 +43,12 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mindrot</groupId>
+			<artifactId>jbcrypt</artifactId>
+			<version>0.4</version>
 		</dependency>
 	</dependencies>
 
@@ -132,7 +137,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 
-		<mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
+		<mysql.driver>com.mysql.cj.jdbc.Driver</mysql.driver>
 		<mysql.url>jdbc:mysql://localhost:3306/icp2152_project</mysql.url>
 		<mysql.user>root</mysql.user>
 		<mysql.password/>
